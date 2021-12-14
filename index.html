@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h2>Please enter the temperature you'd like to convert.</h2>
+            <div class="menu">
+                <input type="number" id="numberselect">
+                <div class="select-box">
+                    <div class="selected" id="selected">Select Scale Category</div>
+                    <div class="option-container">
+                        <div class="option">
+                            <input type="radio" id="Fahrenheit" class="radio" name="category">
+                            <label class="label">Fahrenheit</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="Kelvin" class="radio" name="category">
+                            <label class="label">Kelvin</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="Rankine" class="radio" name="category">
+                            <label class="label">Rankine</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="Delisle" class="radio" name="category">
+                            <label class="label">Delisle</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="Newton" class="radio" name="category">
+                            <label class="label">Newton</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="Romer" class="radio" name="category">
+                            <label class="label">Romer</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="Reaumur" class="radio" name="category">
+                            <label class="label">Reaumur</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Submit" id="submitbutton" onclick="Calculator()">
+            <div class="answer">
+                <p>The answer is :</p>
+                <p id="result"></p>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
